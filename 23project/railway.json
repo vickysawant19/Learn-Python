@@ -4,7 +4,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "waitress-serve --port=%PORT% server:app",
+    "startCommand": "waitress-serve --port=$PORT server:app",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }
