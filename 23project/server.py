@@ -41,4 +41,5 @@ def get_weather():
 
 
 if __name__ == "__main__":
-    serve(app, port=os.getenv("PORT", default=8000))
+    # serve(app, port=os.getenv("PORT", default=8000))
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
